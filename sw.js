@@ -46,7 +46,7 @@ self.addEventListener('activate', e=>{
                             return caches.delete(cacheName);
                         }
                     })
-                )
+                );
             })
             .then(()=>{
                 //Activas cache en el dispositivo
