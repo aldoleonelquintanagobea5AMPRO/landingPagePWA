@@ -1,0 +1,28 @@
+#photo{
+    display: block;
+    align-self: center;
+    position: relative;
+}
+
+#presentationCard{
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+
+#year{
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+#footer{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.social{
+    height: 30px;
+    padding-right: 30px;
+}

@@ -14,7 +14,10 @@ var urlsToCache = [
     './images/384x384.png',
     './images/512x512.png',
     './images/1024x1024.png',
-    './images/foto.jpg'
+    './images/foto.jpg',
+    './images/fb.png',
+    './images/ig.png',
+    './images/x.png'
 ];
 
 //evento para instalar

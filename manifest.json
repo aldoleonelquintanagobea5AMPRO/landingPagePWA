@@ -1,7 +1,7 @@
 {
     "name": "AplicacionPWA",
     "short_name": "BCH PWA",
-    "descrition": "Aplicación PWA CV personal",
+    "description": "Aplicación PWA CV personal",
     "background_color": "#fff",
     "theme_color": "#ffa833",
     "orientation": "portrait",

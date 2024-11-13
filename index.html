@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
     <!--Color de la aplicación-->
     <meta name="theme-color" content="#ffa833">
@@ -23,24 +24,75 @@
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <h1>Perfil</h1>
-    <table class="card text-bg-primary mb-3">
-        <tr>
-            <th>
-                <img class="rounded img-thumbnail" src="images/foto.jpg" width="200px"/>
-            </th>
-            <th>
-                <div class="w-auto p-3 h-auto d-inline-block badge text-bg-info align-middle">
-                    <h2>Aldo Leonel Quintana Gobea</h2>
-                    <p>Hola, buenas tardes.</p>
-                </div>
-            </th>
-        </tr>
-    </table>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Perfil</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Biografía</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Más
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Gustos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Logros</a></li>
+                  <li><a class="dropdown-item" href="#">Metas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div id="presentationCard" class="card bg-info mb-3">
+      <div class="row g-0">
+        <div class="col-md-2">
+          <img id="photo" src="img/foto.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-10">
+          <div class="card-body">
+            <h4 class="card-title">Aldo Leonel Quintana Gobea</h4>
+            <p class="card-text">Hola, buenas tardes. Soy una persona meticulosa y comprometida con su desarrollo profesional, especialmente en el ámbito de la programación y el uso de tecnologías como Unity y Unity DevOps. Tengo la capacidad para enfrentar y resolver desafíos técnicos, como errores complejos y tareas avanzadas de control de versiones. Además, mi enfoque metódico se refleja en mi interés por la precisión gramatical, lo que muestra un alto nivel de atención al detalle y un deseo constante de mejorar sus habilidades. No solo crecer en lo técnico, sino también en mi desarrollo profesional.</p>
+            <a href="#" class="btn btn-primary">Ir a biografía</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-<footer>
-    2024
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Aldo Leonel Quintana Gobea</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-body-secondary" href="#"><img class="social" src="img/fb.png" alt="Facebook"></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><img class="social" src="img/x.jpg" alt="X"></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><img class="social" src="img/ig.png" alt="Instagram"></a></li>
+    </ul>
 </footer>
+
 </html>
